@@ -1,0 +1,15 @@
+<div class="col-sm-8 col-sm-offset-2">
+    <h1>Nouveau Post </h1>
+        <form [formGroup]="postForm" (ngSubmit)="onSubmitForm()">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="form-control" formControlName="title">
+            </div>
+            <div class="form-group">
+                <label for="content">Content</label>
+                <input type="text" id="content" class="form-control" formControlName="content">
+            </div>
+            <button type="submit" class="btn btn-primary">Poster</button>
+         </form>  
+    <p class="p-info-new-post text-danger" *ngIf="formStatus === 'disabled'">Veuillez Remplir le Formulaire</p>
+</div>
