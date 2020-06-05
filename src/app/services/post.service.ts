@@ -1,6 +1,8 @@
 import { Subject } from 'rxjs';
 import { Post } from '../models/post.model';
+import { Injectable } from "@angular/core";
 
+@Injectable()
 export class PostService {
 
 
