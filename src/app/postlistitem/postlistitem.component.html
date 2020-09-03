@@ -1,13 +1,10 @@
-<div [ngClass]="{'list-group-item': true,
+<div class="mx-auto" [ngClass]="{'list-group-item': true,
 'list-group-item-success': OnIncrement() ,
 'list-group-item-danger': OnDecrement()}">
     <h3 class="font-weight-bold">{{postTitle}} </h3>
     <p class="font-weight-bold date">{{date}}</p>
     <p>{{postContent}}</p>
-    <button type="button" class="btn btn-success"
-    (click)="increment()">Love It !</button>
-    <button type="button" class="btn btn-danger"
-    (click)="decrement()">Don't love it !</button>
-    <button type="button" class="btn btn-danger pull-right"
-    (click)="OnSuppPost()">Supprimer</button>
+    <button type="button" class="btn btn-success" (click)="increment()">Love It !</button>
+    <button type="button" class="btn btn-danger" (click)="decrement()">Don't love it !</button>
+    <button type="button" class="btn btn-danger pull-right" (click)="OnSuppPost()">Supprimer</button>
 </div>
